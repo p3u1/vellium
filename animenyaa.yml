@@ -1,0 +1,20 @@
+name: Anime Nyaa
+author: p3u1
+version: 1
+minVersion: '0.7'
+sources:
+  - name: Nyaa
+    website: https://nyaa.si
+    htmlParser:
+      searchUrl: /?f=0&c=1_0&q={query}&s=seeders&o=desc
+      rows: tr.default
+      title: { query: td:nth-child(2) > a:last-child }
+      magnet: { query: a[href^="magnet:"], attribute: href }
+      size: { query: td:nth-child(4) }
+      sl: { seeders: td:nth-child(6), leechers: td:nth-child(7) }
+actions:
+  - name: Open Magnet
+    requires: [debrid]
+    deeplink:
+      - os: iOS
+        scheme: '{link}'
