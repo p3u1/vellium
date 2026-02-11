@@ -1,0 +1,20 @@
+name: Movies 4K HDR
+author: p3u1
+version: 1
+minVersion: '0.7'
+sources:
+  - name: 1337x 4K
+    website: https://1337x.to
+    htmlParser:
+      searchUrl: /search/{query}+2160p+HDR/1/
+      rows: table.table-list > tbody > tr
+      title: { query: td.name > a:nth-child(2) }
+      magnet: { query: td.name > a:nth-child(2), attribute: href }
+      size: { query: td.size }
+      sl: { seeders: td.seeds }
+actions:
+  - name: Open Magnet
+    requires: [debrid]
+    deeplink:
+      - os: iOS
+        scheme: '{link}'
