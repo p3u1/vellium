@@ -1,0 +1,22 @@
+name: Vellium Meta Streams
+author: p3u1
+version: 1
+minVersion: '0.7'
+
+plugins:
+  - https://raw.githubusercontent.com/p3u1/vellium/main/animenyaa.yml
+  - https://raw.githubusercontent.com/p3u1/vellium/main/arcademame.yml
+  - https://raw.githubusercontent.com/p3u1/vellium/main/biosonly.yml
+  - https://raw.githubusercontent.com/p3u1/vellium/main/chdonly.yml
+  - https://raw.githubusercontent.com/p3u1/vellium/main/emulatorall.yml
+  - https://raw.githubusercontent.com/p3u1/vellium/main/metacached.yml
+  - https://raw.githubusercontent.com/p3u1/vellium/main/metahq.yml
+  - https://raw.githubusercontent.com/p3u1/vellium/main/metamovies.yml
+  - https://raw.githubusercontent.com/p3u1/vellium/main/metatv.yml
+  - https://raw.githubusercontent.com/p3u1/vellium/main/microsoft.yml
+  - https://raw.githubusercontent.com/p3u1/vellium/main/movies4k.yml
+  - https://raw.githubusercontent.com/p3u1/vellium/main/moviesdv.yml
+  - https://raw.githubusercontent.com/p3u1/vellium/main/nintendo.yml
+  - https://raw.githubusercontent.com/p3u1/vellium/main/sega.yml
+  - https://raw.githubusercontent.com/p3u1/vellium/main/sony.yml
+  - https://raw.githubusercontent.com/p3u1/vellium/main/tvseasons.yml
