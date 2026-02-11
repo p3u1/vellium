@@ -1,0 +1,20 @@
+name: Meta TV
+author: p3u1
+version: 1
+minVersion: '0.7'
+sources:
+  - name: EZTV
+    website: https://eztv.re
+    htmlParser:
+      searchUrl: /search/{query}
+      rows: tr.forum_header_border
+      title: { query: td:nth-child(2) > a }
+      magnet: { query: a[href^="magnet:"], attribute: href }
+      size: { query: td:nth-child(4) }
+      sl: { seeders: td:nth-child(6) }
+actions:
+  - name: Open Magnet
+    requires: [debrid]
+    deeplink:
+      - os: iOS
+        scheme: '{link}'
